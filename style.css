@@ -2,10 +2,33 @@ body {
     background-color: lightblue;
 }
 
-.buttons {
+.calculator{
+    background-color: white;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.calculator-screen {
+    width: calc(100% - 4em);
+    padding: 1em;
+    margin: 1em;
+}
+
+.calculator-keys {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-    padding: 20px;
+    grid-gap: 5px;
+    padding: 5px;
     
 }
+
+.reset-key {
+    column-span: 2;
+    width: 100%;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+/* .zero {
+    grid-area: 1 / 1 / 1 / 2;
+} */
